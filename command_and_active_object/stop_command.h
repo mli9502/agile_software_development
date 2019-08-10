@@ -8,7 +8,7 @@
 template<typename T>
 class StopCommand : public Command {
 public:
-    void execute() {
+    void execute() override {
         T::_stop = true;
     }
 };

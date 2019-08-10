@@ -2,6 +2,8 @@ CXX = g++
 LD_FLAGS = 
 CXX_FLAGS = -std=c++11 -g
 
+TEST_DIR = ./test
+
 SRC_DIR = .
 HEADER_DIR = . ../utils 
 OBJ_DIR = ./obj

@@ -20,8 +20,8 @@ private:
 public:
     SleepCommand(long milliseconds, 
                     ActiveObjectEngine& e, 
-                    shared_ptr<Command> wakeupCommand) : _sleepTime(milliseconds), 
-                                                        _engine(e),
+                    shared_ptr<Command> wakeupCommand) : _engine(e),
+                                                        _sleepTime(milliseconds),
                                                         _startTime(0),
                                                         _started(false) {
         _wakeupCommand = wakeupCommand;
