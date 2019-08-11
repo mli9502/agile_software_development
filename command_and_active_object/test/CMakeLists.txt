@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.15)
 
 message(STATUS "source: ${PROJECT_SOURCE_DIR}")
+message(STATUS ": ${PROJECT_SOURCE_DIR}")
 
-add_subdirectory("${PROJECT_SOURCE_DIR}/../extern/googletest" "extern/googletest")
+add_subdirectory("${PROJECT_SOURCE_DIR}/../extern/googletest" "./extern/googletest")
 
 mark_as_advanced(
     BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
