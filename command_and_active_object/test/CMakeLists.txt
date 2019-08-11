@@ -18,4 +18,12 @@ macro(add_package_test TEST_NAME SRC_LIB)
     set_target_properties(${TEST_NAME} PROPERTIES FOLDER tests)
 endmacro()
 
-add_package_test(test_sleep_command command_and_active_object_lib test_sleep_command.cpp)
+set(UNIT_TEST_TARGET test_sleep_command)
+
+add_package_test(${UNIT_TEST_TARGET} command_and_active_object_lib test_sleep_command.cpp)
+
+add_custom_command(
+    TARGET ${UNIT_TEST_TARGET} POST_BUILD
+    COMMENT "Running ${UNIT_TEST_TARGET}"
+    COMMAND ${UNIT_TEST_TARGET}
+)

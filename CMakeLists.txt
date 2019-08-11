@@ -1,0 +1,1 @@
+add_subdirectory(command_and_active_object)
