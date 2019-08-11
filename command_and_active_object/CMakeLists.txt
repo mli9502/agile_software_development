@@ -2,6 +2,13 @@ cmake_minimum_required(VERSION 3.15)
 
 project(CommandAndActiveObject LANGUAGES CXX)
 
+option(BUILD_TESTS "Build the tests..." ON)
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test)
+endif()
+
 add_library(command_and_active_object_lib STATIC
                 active_object_engine.cpp
                 command.cpp
