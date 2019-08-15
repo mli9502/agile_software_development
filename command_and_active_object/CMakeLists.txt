@@ -19,5 +19,5 @@ add_library(command_and_active_object_lib STATIC
 target_include_directories(command_and_active_object_lib PUBLIC . ../utils)
 target_compile_features(command_and_active_object_lib PUBLIC cxx_std_11)
 
-add_executable(main main.cpp)
-target_link_libraries(main PUBLIC command_and_active_object_lib)
+add_executable(command_and_active_object main.cpp)
+target_link_libraries(command_and_active_object PUBLIC command_and_active_object_lib)
