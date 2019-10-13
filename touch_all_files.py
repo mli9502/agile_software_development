@@ -1,4 +1,4 @@
-#!/ usr / bin / python3 .6
+#!/usr/bin/python3.6
 '''
 This script will append a new line to all .h/.cpp files.
 '''

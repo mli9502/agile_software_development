@@ -1,2 +1,3 @@
+Language: Cpp
 BasedOnStyle: Chromium
 IdentWidth: 4
