@@ -13,5 +13,3 @@ class Application {
 
 #endif
 
-
-

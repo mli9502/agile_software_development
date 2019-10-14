@@ -17,5 +17,3 @@ class ApplicationRunner {
 
 #endif
 
-
-

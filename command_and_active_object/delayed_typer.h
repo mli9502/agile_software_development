@@ -25,5 +25,3 @@ class DelayedTyper : public Command,
 
 #endif
 
-
-

@@ -13,5 +13,3 @@ class StopCommand : public Command {
 
 #endif
 
-
-

@@ -42,5 +42,3 @@ TEST_F(SleepCommandTestFixture, TestSleep) {
   EXPECT_TRUE(wakeupCommandExecuted);
 }
 
-
-
