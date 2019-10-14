@@ -4,26 +4,25 @@
 #include <common_includes.h>
 
 class BubbleSorter {
- private:
-  int m_operations;
+   private:
+    int m_operations;
 
- protected:
-  int m_length;
+   protected:
+    int m_length;
 
-  int doSort();
+    int doSort();
 
-  virtual void swap(int idx) = 0;
-  virtual bool outOfOrder(int idx) = 0;
+    virtual void swap(int idx) = 0;
+    virtual bool outOfOrder(int idx) = 0;
 
-  virtual void print(ostream& os, int idx) = 0;
+    virtual void print(ostream& os, int idx) = 0;
 
- public:
-  BubbleSorter();
+   public:
+    BubbleSorter();
 
-  void printSorted();
+    void printSorted();
 
-  virtual ~BubbleSorter() = default;
+    virtual ~BubbleSorter() = default;
 };
 
 #endif
-

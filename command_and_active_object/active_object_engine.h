@@ -6,13 +6,12 @@
 #include <command.h>
 
 class ActiveObjectEngine {
- private:
-  vector<shared_ptr<Command>> _itsCommands;
+   private:
+    vector<shared_ptr<Command>> _itsCommands;
 
- public:
-  void addCommand(shared_ptr<Command> c);
-  void run();
+   public:
+    void addCommand(shared_ptr<Command> c);
+    void run();
 };
 
 #endif
-

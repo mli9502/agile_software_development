@@ -8,20 +8,19 @@
 
 class DelayedTyper : public Command,
                      public enable_shared_from_this<DelayedTyper> {
- private:
-  long _itsDelay;
-  char _itsChar;
+   private:
+    long _itsDelay;
+    char _itsChar;
 
- public:
-  static ActiveObjectEngine _engine;
-  static bool _stop;
+   public:
+    static ActiveObjectEngine _engine;
+    static bool _stop;
 
-  DelayedTyper(long delay, char c) : _itsDelay(delay), _itsChar(c) {}
-  ~DelayedTyper() = default;
+    DelayedTyper(long delay, char c) : _itsDelay(delay), _itsChar(c) {}
+    ~DelayedTyper() = default;
 
-  void execute() override;
-  void delayAndRepeat();
+    void execute() override;
+    void delayAndRepeat();
 };
 
 #endif
-

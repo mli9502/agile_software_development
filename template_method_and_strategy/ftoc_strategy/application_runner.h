@@ -6,14 +6,13 @@
 class Application;
 
 class ApplicationRunner {
- private:
-  shared_ptr<Application> m_itsApplication;
+   private:
+    shared_ptr<Application> m_itsApplication;
 
- public:
-  ApplicationRunner(shared_ptr<Application> app) : m_itsApplication(app) {}
+   public:
+    ApplicationRunner(shared_ptr<Application> app) : m_itsApplication(app) {}
 
-  void run();
+    void run();
 };
 
 #endif
-
