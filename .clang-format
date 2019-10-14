@@ -1,3 +1,6 @@
 Language: Cpp
 BasedOnStyle: Chromium
-IdentWidth: 4
+Standard: Cpp11
+TabWidth: 4
+UseTab: Never
+IndentWidth: 4
