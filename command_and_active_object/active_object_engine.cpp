@@ -11,3 +11,4 @@ void ActiveObjectEngine::run() {
     firstCommand->execute();
   }
 }
+

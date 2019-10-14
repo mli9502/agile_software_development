@@ -41,3 +41,4 @@ TEST_F(SleepCommandTestFixture, TestSleep) {
   EXPECT_THAT(sleepTime, AllOf(Ge(1000), Le(1100)));
   EXPECT_TRUE(wakeupCommandExecuted);
 }
+

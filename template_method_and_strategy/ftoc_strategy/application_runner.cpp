@@ -9,3 +9,4 @@ void ApplicationRunner::run() {
   }
   m_itsApplication->cleanup();
 }
+

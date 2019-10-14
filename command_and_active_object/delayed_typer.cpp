@@ -16,3 +16,4 @@ void DelayedTyper::delayAndRepeat() {
   _engine.addCommand(
       make_shared<SleepCommand>(_itsDelay, _engine, shared_from_this()));
 }
+
