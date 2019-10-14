@@ -41,3 +41,4 @@ pprint(target_files)
 for target_file in target_files:
     with open(target_file, 'a') as fd:
         fd.write('\n')
+
